@@ -1,0 +1,82 @@
+/*Make visible all the elements*/
+/*
+body = red Color
+div = purple Color
+ul = blue Color
+a = orage Color
+div {
+  border: 1.5px solid purple;
+}
+ul {
+  border: 1.5px solid blue;
+}
+a {
+  border: 1.5px solid orange;
+}
+*/
+
+/*Google Fonts-Poppins ***********************************************
+*Light 300
+*Regular 400
+*Medium 500
+*SemiBold 600
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/*We eliminate all margin and padding from the webpage*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*We apply the font family poppins to our Css*/
+body {
+  /* border: 1.5px solid red;*/
+  font-family: "Poppins", sans-serif;
+}
+/*Desktop Navigation*********************************************/
+/*LOGO STYLES*/
+/*Make .logo div DavesDevs Biger*/
+.logo {
+  font-size: 2rem;
+}
+/*Disable pointer behavior*/
+.logo:hover {
+  cursor: default;
+}
+/*NAV STYLES*/
+/*nav element for mobile and desktop
+-- With the space around we make a espacee betwen the elements
+-- with align all item to their respectic center
+-- we separate the nav from the top of the body
+*/
+nav {
+  /* border: 5px solid purple;*/
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+/*UL STYLES*/
+/*.nav-links is in an ul list, with li items, an a elements*/
+nav,
+.ul-li-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+/*A STYLES*/
+/*a links elements and with the effect*/
+/*links elments a, remove the bullets poins and mak th black*/
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+/*links elements, we add a pseudo class hover */
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+/************************************************Desktop Navigation/
+/MOBILE-HAMBURGUER-MENU Navigation*********************************/
